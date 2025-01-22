@@ -130,7 +130,7 @@ body {
     font-weight: 100;
     position: relative;
     z-index: 9;
-    line-height: 5vw;
+    line-height: 6vw;
 }
 
 .elem .moving {
@@ -195,6 +195,9 @@ body {
 
 .image-container {
     padding: 30px;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .image-div {
@@ -202,6 +205,8 @@ body {
     width: 30vw;
     background-color: red;
     position: relative;
+    margin: 40px 20px;
+    overflow: hidden;
 }
 
 .image-div img {
@@ -229,7 +234,6 @@ body {
     line-height: 2.5vw;
     opacity: 0;
     transition: all ease 0.5s;
-    transition-delay: 0.2s;
 }
 
 .image-div:hover .overlay {
@@ -238,4 +242,28 @@ body {
 
 .image-div:hover .overlay p {
     opacity: 1;
+}
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+#footer #foot {
+    height: 50%;
+    width: 100%;
+    background-color: #000;
+}
+
+#footer h2 {
+    font-family: gilroy;
+    text-transform: uppercase;
+    font-size: 1vw;
+    cursor: pointer;
 }
